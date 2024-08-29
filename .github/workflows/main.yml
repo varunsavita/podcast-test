@@ -20,8 +20,8 @@ jobs:
         run: ls -al
       - name: Run Feed Generator
         #run: cd subdirectory && python feed.py
-        run: python /workspaces/podcast-test/feed.py
-        #run: python /home/runner/work/podcast-test/podcast-test/feed.py
+        #run: python /workspaces/podcast-test/feed.py
+        run: python /home/runner/work/podcast-test/podcast-test/feed.py
       - name: Push Repo
         run: |
           git config user.name github-actions
